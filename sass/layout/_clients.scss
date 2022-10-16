@@ -1,0 +1,77 @@
+/* ========= svg icons in clients ========= */
+
+.clients-list {
+    @extend %aling;
+    column-gap: 30px;
+}
+
+.clients-list-item {
+
+    @extend %aling; 
+    margin-bottom: 0;
+
+    @media screen and (max-width: $max-desktop) {
+        &:nth-child(-n + 3) {
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media screen and (max-width: $max-tablet) {
+        &:nth-child(-n + 4) {
+            margin-bottom: 30px;
+        }
+
+        flex-basis: calc(100%/3);
+    }
+
+    
+}
+
+.clients-list-link {
+    @extend %aling;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    width: 210px;
+    height: 92px;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
+
+    @media screen and (max-width: $max-mobile) {
+        width: 100%;
+        height: 60px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 225px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 170px;
+    }
+}
+
+.clients-list-icon {
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    .clients-list-link:hover &,
+    .clients-list-link:focus & {
+        fill: var(--accent-color);
+
+    }
+    @media screen and (max-width: $max-mobile) {
+        width: 90%;
+        height: 70%;
+    }
+}
