@@ -1,11 +1,13 @@
 .page-header-container,
 .page-nav {
     display: flex;
+    
 }
 
 .header-border {
     border-bottom: 1px solid #ECECEC;
-}
+    padding-top: 10px;
+    padding-bottom: 16px;}
 
 .logohead {
     display: inline-block;
@@ -51,6 +53,8 @@
 
     @media screen and (max-width: $max-tablet) {
         display: none;
+        
+
     }
 }
 
