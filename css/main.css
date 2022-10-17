@@ -55,8 +55,14 @@ textarea {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 34px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -69,6 +75,8 @@ textarea {
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 }
 @media screen and (min-width: 768px) {
