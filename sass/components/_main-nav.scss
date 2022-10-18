@@ -7,6 +7,7 @@
     font-weight: 500;
     line-height: 1.14;
     text-decoration: none;
+    
 }
 .current {
     color: var(--accent-colour);
@@ -19,6 +20,10 @@
         margin-left: auto;
         padding-top: 21px;
         padding-bottom: 21px;
+        
+        &:hover,
+        &:focus {
+            color: var(--accent-color)
     }
 
     @include desktop {
@@ -138,5 +143,4 @@ transition: color 250ms var(--transition-cubic);
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: var(--accent-colour);
-}
+    background-color: var(--accent-colour);}
