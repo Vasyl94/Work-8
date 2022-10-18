@@ -1,0 +1,76 @@
+/* ключевые компетенции */
+.prefences {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width:768px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+    @media screen and (min-width:1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+}
+.prefences__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+   
+}
+
+.prefences__item {
+    width: 100%;
+    @media screen and (min-width:768px) {
+            width: calc((100% - 30px) / 2);
+        }
+    
+    @media screen and (min-width:1200px) {
+            width: calc((100% - 90px) / 4);
+        }
+    // margin-right: 30px;
+    &:last-child {
+        margin-right: 0;
+        }
+}
+
+.prefences__title {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: left;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    @include tablet {
+    justify-content: left;
+    }
+    @include desktop {
+        justify-content: left;
+    }
+}
+
+.prefences p {
+    margin-top: 10px;
+    line-height: 1.71;
+}
+.prefences__pic {
+    display: flex;
+    // max-width: 450px;
+    height: 120px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f4fa;
+    // @include tablet {
+    //     max-width: 354px;
+    // }
+    // @include desktop {
+    //     max-width: 270px;
+    // }
+}

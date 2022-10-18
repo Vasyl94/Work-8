@@ -1,0 +1,135 @@
+.futer {
+    background-color: #2f303a;
+
+    @include desktop {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #2f303a;
+    }
+}
+
+.futer__logotext {
+    color: var(--accent-colour);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+.futer__logo-link {
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--white-text-colour);
+    transition: color 250ms var(--transition-cubic);
+}
+
+.futer__list {
+    margin-top: 20px;
+
+@include desktop {
+
+}
+}
+
+.futer__mail {
+margin-top: 9px;
+@include tablet {
+    margin-top: 8px;
+}
+}
+
+.futer__tel {
+    @include tablet {
+        margin-top: 8px;
+    }
+}
+
+.futer__adress {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--white-text-colour);
+    line-height: 1.71;
+    font-style: normal;
+    transition: color 250ms var(--transition-cubic);
+    &:hover {
+        color: var(--accent-colour);
+        }
+    }
+
+.futer__logo {
+    padding-top: 60px ;
+    color: var(--white-text-colour);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: color 250ms var(--transition-cubic);
+    &:hover {
+            color: var(--accent-colour);
+        }
+    @include tablet {
+    padding-left: 76px;    
+    }
+    @include desktop {
+        padding-top: 0;
+        padding-left: 0;
+        color: var(--white-text-colour);
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        text-decoration: none;
+        letter-spacing: 0.03em;
+        transition: color 250ms var(--transition-cubic);
+    }
+}
+
+.futer__link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--futer-mail-tel);
+        transition: color 250ms var(--transition-cubic);
+        &:hover,
+        &:focus {
+            color: var(--accent-colour);
+        }
+}
+.container.futer {
+    display: block;
+    text-align: center;
+
+    @include tablet {
+    
+    }
+    @include desktop { 
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    align-items: baseline;
+    padding-top: 0;
+    padding-bottom: 0;
+    }
+}
+
+.futer_tablet {
+    display: block;
+    align-items: baseline;
+    @include tablet {
+        display: flex;
+    }
+}

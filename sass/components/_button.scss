@@ -1,0 +1,27 @@
+/* кнопка */
+.hero-page__button {
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.hero-page__button {
+    color: var(--bg-page-colour);
+    background-color: var(--accent-colour);
+    transition: background-color 250ms var(--transition-cubic);
+    cursor: pointer;
+    &:hover,
+    &:focus {
+    background-color: var(--bg-button-hover);
+}
+}

@@ -1,0 +1,60 @@
+/* чем мы занимаемся*/
+
+.about {
+    display: none;
+    padding-top: 0;
+    @include desktop {
+        display: block;
+        padding-top: 0;
+    }
+}
+
+.about__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.about__item {
+    position: relative;
+}
+
+.about__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.about__list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.about__item {
+    margin-right: 30px;
+&:last-child {
+    margin-right: 0;
+    }
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
