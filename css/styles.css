@@ -91,7 +91,9 @@ line-height: 24px;
 color: #000000;
 }
 /* work styles */
-
+.work{
+ 
+}
 .work-position{
   font-style: normal;
 font-weight: 700;
@@ -137,7 +139,8 @@ color: #595959;
 }
 
 /* education styles */
-
+.education{
+}
 
 .abot-name2{font-style: normal;
   font-weight: 700;
